@@ -1,0 +1,600 @@
+/* ////////// Color Palette ////////// */
+   /*
+   White - #fff;
+   Black - #000;
+   Pink - #fd7e73;
+   Grey - #8f8f8f;
+   Green - #a5c287;
+   */
+
+
+/* ////////// CSS Reset ////////// */
+
+a img {
+    border: 0;
+    }
+    
+img {
+    max-width: 100%;
+    height: auto;
+}
+    
+h1, h2, h3, h4, h5, h6, body {
+    margin: 0; padding: 0; line-height: 1em; font-size: 100%;
+    }
+    
+p {
+    margin: 0 0 1em 0;
+    }
+    
+    
+    
+/* ////////// General ////////// */
+
+.outline {
+    display: none;
+    } /*Hide headings that are intended to convey structure in HTML outline */
+
+body {
+    font: 1em/1.5 "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    }
+    
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Franklin Gothic", "ITC Franklin Gothic", "Franklin Gothic Medium", "Century Gothic", Arial, sans-serif;
+    margin-bottom: 1em;
+    font-weight: normal;
+    }
+
+h1 {
+    font-size: 2.1875em; /* 35px ÷ 16 */
+    }
+    
+h2 {
+    font-size: 1.875em; /* 30px ÷ 16 */
+    margin-top: 1.5em;
+    }
+    
+ul+h2, ul+h3 {
+    margin-top: 1em; /* If a heading, follows a list, reduces margin on heading so that bottom margin of list and top margin of heading does not create too much white space */
+    }
+    
+h3 {
+    font-size: 1.5em; /* 24px ÷ 16 */
+    margin-top: 2em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    }
+
+#logo {
+    max-width: 403px;
+    }
+    
+a:link, a:active {
+    color: #aaaaaa;
+    }
+
+a:visited {
+    color: #000;
+    }
+
+a:hover {
+    color: #808080;
+    }
+    
+.imgLeft {
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+    }
+    
+.clear {
+    clear: both;
+}
+
+/* ////////// Layout ////////// */
+
+
+#wrapper {
+    margin: 1em 0 0 0;
+    }
+    
+header, footer,  nav ul, #pageContent {
+    margin-left: 8.5%; /* 85px divided by 16 is 5.31em; or  */
+    margin-right: 8.5%;
+    }
+
+footer {
+    margin-top: 1.5em; /* 24px divided by 16 */
+    }
+    
+/* ////////// Main Navigation ////////// */
+    
+nav ul {
+    list-style-type: none;
+    margin-top: 1em; /* 85px divided by 16 */
+    margin-bottom: 1em;
+    padding: 0;
+    }
+    
+nav li {
+    display: inline;
+    padding-right: .625em /* 10px divided by 16 */
+    }
+    
+nav li.resources {
+    padding-left: 2.50em;
+    }
+
+nav li a:link, nav li a:visited {
+    color: #000;
+    text-decoration: none;
+    }
+ 
+nav li a:hover {
+    color: #8f8f8f;
+    text-decoration: underline;
+    }
+
+
+/* ////////// Mobile Navigation ////////// */
+
+#mobileNav {
+    display: none;
+    z-index: 1;
+    } 
+    
+#mobileNav {
+    width: 90%;    
+    }
+
+#mobileNav li {
+    display: block;
+    padding: .5em;
+    background: #000;
+    text-align: center;
+    }
+
+#mobileNav li a:link, #mobileNav li a:visited {
+    text-decoration: none;
+    color: #fff;
+    width: 320px;
+    }
+
+#mobileNav li:hover, #mobileNav li a:hover {
+    background: #ccc;
+    color: #8f8f8f;
+    }
+
+
+/* ////////// Homepage ////////// */
+
+h1.home {
+    color: #fff;
+    padding-top: 4em;
+    }
+    
+#banner p {
+    color: #fff;
+    width: 40%; 
+    }
+
+#banner {
+    background-color: #000;
+    background: url('images/buffalo-modern-sewing-homepage-img-1721.jpg') no-repeat;
+    background-size: cover;
+    height: 55.43em;
+    margin: 0;
+    padding: 0 8.5%; /*85px */
+    clear: both; /* clear floated navigation */
+    }
+    
+    
+/* ////////// Buttons ////////// */
+
+#join, #subscribe, #apply {
+    display: block;
+    height: 4em;  /* 96px divided by 24px - size of font */
+    width: 16.79em; /* 403px divided by 24px is 16.79em */
+    margin-bottom: 1em;
+    -moz-border-radius: 0.625em;
+    -webkit-box-border-radius: 0.625em;
+    border-radius: 0.625em; /* 10px divided by 16 */
+    font-family: "Century Gothic", Arial, sans-serif; 
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 4em;
+    text-align: center;
+    text-decoration: none;
+    }
+
+#join, #apply {
+    text-shadow:1px -1px rgba(0, 0, 0, .2);
+    -moz-text-shadow:1px -1px rgba(0, 0, 0, .2);
+    -webkit-text-shadow:1px -1px rgba(0, 0, 0, .2);
+    }
+
+a:link#join, a:active#join {
+    margin-top: 3em; /* 48px divided by 16 */
+    background: #fd948b; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fd948b 0%, #fd7e73 69%, #fd7e73 84%, #fd7e73 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fd948b), color-stop(69%,#fd7e73), color-stop(84%,#fd7e73), color-stop(100%,#fd7e73)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fd948b 0%,#fd7e73 69%,#fd7e73 84%,#fd7e73 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fd948b 0%,#fd7e73 69%,#fd7e73 84%,#fd7e73 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fd948b 0%,#fd7e73 69%,#fd7e73 84%,#fd7e73 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fd948b 0%,#fd7e73 69%,#fd7e73 84%,#fd7e73 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd948b', endColorstr='#fd7e73',GradientType=0 ); /* IE6-9 */
+    }
+
+a:link#subscribe, a:active#subscribe  {
+    background-color: #000;
+    }
+
+a:hover#join {
+    background: #f9746d; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f9746d 2%, #fd5f52 60%, #fd5f52 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#f9746d), color-stop(60%,#fd5f52), color-stop(100%,#fd5f52)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f9746d 2%,#fd5f52 60%,#fd5f52 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f9746d 2%,#fd5f52 60%,#fd5f52 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f9746d 2%,#fd5f52 60%,#fd5f52 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f9746d 2%,#fd5f52 60%,#fd5f52 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9746d', endColorstr='#fd5f52',GradientType=0 ); /* IE6-9 */
+    }
+
+a:hover#subscribe {
+    background-color: #222;
+    }
+    
+#pageHeader #join, #pageHeader #apply  {
+    font-size: 1.25em; /* 20 px */
+    height: 2.4em;  /* 48px ÷ 20px - size of font */
+    width: 14em; /* 280px ÷ 20px */
+    line-height: 2.4em;
+    }
+    
+a:link#apply, a:active#apply  {
+    background-color: #0d6dba;
+    }
+    
+a:hover#apply {
+    background-color: #5bb0f4;
+    }
+    
+a:link#applyInner, a:active#applyInner, a:visited#applyInner {
+    display: block;
+    font-size: 1.25em; /* 20 px */
+    height: 2.4em;  /* 48px ÷ 20px - size of font */
+    width: 12em; 
+    line-height: 2.4em;
+    margin-bottom: 1em;
+    -moz-border-radius: 0.625em;
+    -webkit-box-border-radius: 0.625em;
+    border-radius: 0.625em; /* 10px divided by 16 */
+    font-family: "Century Gothic", Arial, sans-serif; 
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0d6dba;
+    }
+    
+a:hover#applyInner {
+    background-color: #5bb0f4;
+    } 
+    
+
+/* ////////// Internal Pages ////////// */
+
+#pageHeader {
+    background-color: #000;
+    height: 10.5625em; /* 169px ÷ 16 */
+    margin-top: 2em;
+    position: relative;
+    border-top: 1.5px dashed #8f8f8f;
+    border-bottom: 1.5px dashed #8f8f8f;
+    -moz-box-shadow: 0 0 0 0.625em #000;
+    -webkit-box-shadow: 0 0 0 0.625em #000;
+    box-shadow: 0 0 0 0.625em #000;
+    }
+
+#pageHeader > h1 {
+    color: #fff;
+    margin-left: 8.5%;
+    padding-top: 2.0857em; /* 73px ÷ 35 */
+    }
+
+#pageHeader > div {
+    position: absolute;
+    top: 0;
+    right: 8.5%;
+    color: #fff;
+    text-align: center;
+    }
+
+#pageHeader > div > p {
+    font-size: 0.8125em; /* 13 ÷ 16 */
+    }
+    
+    
+#pageHeader > div a:link, #pageHeader > div a:active, #pageHeader > div a:visited {
+    margin-top: 2.2em; 
+    color: #fff;
+    }
+    
+#pageHeader #apply {
+    margin-top: 3em;
+}
+
+#pageContent {
+    margin-top: 2.5em;
+    margin-bottom: 4em;
+    }
+
+#pageContent > h2:nth-child(1) {
+margin-top: 2.625em; /*If heading comes after page title, adds extra white space to compensate for page title's box shadow, which takes away from margin */
+    }
+
+#freeSew, #workshop {
+    width: 40%;
+    height: 20em;
+    margin-bottom: 3em;
+    position: relative;
+    background-color: #d4d4d4;
+    margin-top: 1.5em;
+    border: 1.5px dashed #8f8f8f;
+    -moz-box-shadow: 0 0 0 0.625em #d4d4d4;
+    -webkit-box-shadow: 0 0 0 0.625em #d4d4d4;
+    box-shadow: 0 0 0 0.625em #d4d4d4;
+    -moz-border-radius: 0.625em;
+    -webkit-box-border-radius: 0.625em;
+    border-radius: 0.625em;
+    padding: 1em;
+    }
+
+#freeSew h3, #workshop h3 {
+    margin-top: .5em;
+    }
+
+#freeSew {
+    margin-right: 8.5%; /* 85px ÷ 1000 x 100 */
+    float: left;
+    }
+    
+#workshop {
+    float: right;
+}
+
+#freeSew a:link, #freeSew a:active, #freeSew a:visited, #workshop a:link, #workshop a:active, #workshop a:visited { 
+    color: #fff;
+    }
+    
+.member img {
+    -moz-border-radius: 0.625em;
+    -webkit-box-border-radius: 0.625em;
+    border-radius: 0.625em;
+}
+
+
+/* ////////// Footer ////////// */
+
+#internalFooter {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    
+    padding-left: 8.5%;
+    padding-top: 2%;
+    padding-bottom: 4em;
+}
+
+#internalFooter a:link, #internalFooter a:visited {
+    color: #fff;
+}
+
+
+/* ////////// Mail Chimp Form ////////// */
+
+#mc_embed_signup{
+    background:#fff;
+    clear:left;
+    width: 50%;
+    font:12px Helvetica,Arial,sans-serif;
+    margin-left: -20px;
+    padding-left: 0;
+    } 
+
+
+/* ////////// Mobile Styles ////////// */
+
+
+@media screen and (max-width: 900px){
+    
+#banner p {
+    width: 25em;
+    }
+    
+#freeSew, #workshop {
+    height: 25em;
+    }
+    
+}
+
+@media screen and (max-width: 760px){
+
+#headerButtons {
+        display: none;
+    }
+    
+    
+    
+#mc_embed_signup { /*mail chimp sign-up form */
+        width: 100%;
+    }
+    
+#freeSew, #workshop {
+    float: none;
+    width: 85%;
+    height: auto;
+    
+    }
+}
+
+@media screen and (max-width: 495px){
+    
+header {
+    margin-bottom: 5em; 
+    margin-left: 5%; 
+    }
+
+#mainNav {
+    display: none;
+    }
+    
+#mobileNav {
+    display: inline-block;
+    }
+    
+#mobileNav { 
+    position: absolute;
+    top: 6em; 
+    left: 0;
+    margin-left: 5%; /* Match mobile nav margin to header margin */
+    }
+    
+#mobileNav li {
+    display: none; /* hide all <li> items */
+    margin: 0;
+    }
+
+#mobileNav .current {
+    display: block; /* show only current <li> item */
+    }
+    
+#mobileNav:hover li {
+	display: block;
+	}
+        
+#banner p {
+    width: 90%;
+    }
+    
+#join, #subscribe {
+    font-size: 1.2em;
+    width: 15.8em; 
+    }
+    
+#pageHeader > h1 {
+    text-align: center;
+    margin-left: 0;
+    }
+    
+.member img {
+    display: block;
+    float: none;
+    }
+    
+}
+
+
+@media screen and (max-width: 460px){
+#logo {
+    width: 100%;
+    height: auto;
+    }
+    
+}
+
+
+@media screen and (max-width: 375px){ 
+    
+header {
+    margin-bottom: 6em; 
+    margin-left: 5%; /*25px ÷ 320px x 100% = 7.8125% */
+    }
+    
+nav ul {
+    margin-left: 0;
+    margin-right: 0;
+    } /* removes margin set on navigation area */
+    
+    
+#mobileNav { 
+    position: absolute;
+    top: 5em; /* 107px ÷ 16px */
+    }
+    
+h1.home {
+    padding-top: 3.4375em; /* 55px ÷ 16px */
+    font-size: 1.5625em; /* 25px ÷ by 16 */
+    }
+
+    
+#join, #subscribe {
+    font-size: 1em;
+    width: 15.65em; 
+    }
+    
+    footer ul {
+    display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 320px){
+    
+#banner {
+    padding-left: 5%;
+    padding-right: 5%;
+    background: url('images/dressform-320-m.jpg') no-repeat;
+    height: 43.875em; /* 702px ÷ 16px */
+    }  
+}
+
+/* ////////// Print Styles ////////// */
+
+@media print {
+
+    h1.home, #banner p {
+        color: #000;
+    }
+
+    #join, #subscribe, a:link #join, a:link #subscribe, footer {
+        display: none;
+    }
+
+    #pageHeader {
+    background-color: #fff;
+    box-shadow: none;
+    height: auto;
+    border: none;
+    margin-top: 0;
+    padding-top:0;
+    }
+
+    #pageHeader h1 {
+        color: #000;
+        padding-top: 8pt;
+    }
+
+    #headerButtons {
+        display: none;
+    }
+
+    #pageContent > h2:nth-child(1) {
+        margin-top:8pt;
+    }
+
+    #freeSew, #workshop {
+        background-color: #fff;
+        border: none;
+        float: none;
+        margin-right: 0;
+        box-shadow:none;
+        border-radius:0;
+        padding:0;
+        width: 100%;
+        height:auto;
+        margin-bottom:4pt;
+    }
+
+}
